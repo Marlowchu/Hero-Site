@@ -1,25 +1,30 @@
 
-var info = []
-var marvel = "spiderman"
+var vidId = []
+var input = "marvel comic theme song"
+var vidPlayerEl = $('#player');
 
-var test = ["8SO43R9sxYk"]
 
-function getApi () {
-    // fetch request gets a list of all the repos for the node.js organization
-    var requestUrl = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyCuPrTUMPdfPTBq-3PnOOxfFCDoe_FeLDc&part=snippet&maxResults=1&q="+ marvel +"theme music&type=video&videoDuration=medium&videoEmbeddable=true&videoLicense=creativeCommon&videoSyndicated=true";
+
+
+function getApiVid () {
+    // api url with key and parameters
+    var requestUrl = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyCuPrTUMPdfPTBq-3PnOOxfFCDoe_FeLDc&part=snippet&maxResults=1&q="+ input +"&type=video&videoDuration=medium&videoEmbeddable=true&videoLicense=creativeCommon";
   
+    // call api
     fetch(requestUrl)
       .then(function (response) {
         return response.json();
       })
       .then(function (data) {
 
-        info = data.items[0].id.videoId
+        // grab the video Id from response and save it
+        vidId = data.items[0].id.videoId
 
-        console.log(info)
-        // .items[0].id.videoId
-
-        // displayVid ();
+        console.log(vidId)
+        // create/display video player and add videoId to src url
+        vidPlayerEl.append(`<iframe id= "vidPlayer" width="640" height="390"
+        src="https://www.youtube.com/embed/`+vidId+`?autoplay=1&mute=1">
+        </iframe>`);
 
       });
   }
@@ -38,6 +43,8 @@ function getApi () {
 
 
 
+function displayVid () {
+    
 
   // 2. This code loads the IFrame Player API code asynchronously.
   var tag = document.createElement('script');
@@ -82,4 +89,4 @@ function getApi () {
   function stopVideo() {
     player.stopVideo();
   }
-  
+}
