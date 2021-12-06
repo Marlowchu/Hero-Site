@@ -1,10 +1,44 @@
 
+var info = []
+var marvel = "spiderman"
 
+var test = ["8SO43R9sxYk"]
 
-
-
-
+function getApi () {
+    // fetch request gets a list of all the repos for the node.js organization
+    var requestUrl = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyCuPrTUMPdfPTBq-3PnOOxfFCDoe_FeLDc&part=snippet&maxResults=1&q="+ marvel +"theme music&type=video&videoDuration=medium&videoEmbeddable=true&videoLicense=creativeCommon&videoSyndicated=true";
   
+    fetch(requestUrl)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+
+        info = data.items[0].id.videoId
+
+        console.log(info)
+        // .items[0].id.videoId
+
+        // displayVid ();
+
+      });
+  }
+
+
+
+// var requestOptions = {
+//     method: 'GET',
+//     redirect: 'follow'
+//   };
+  
+//   fetch("https://www.googleapis.com/youtube/v3/search?key=AIzaSyCuPrTUMPdfPTBq-3PnOOxfFCDoe_FeLDc&part=snippet&maxResults=1&q=marvel's hulk music&type=video&videoDuration=medium&videoEmbeddable=true&videoLicense=creativeCommon&videoSyndicated=true", requestOptions)
+//     .then(response => response.text())
+//     .then(result => console.log(result.items[0].id.videoId))
+//     .catch(error => console.log('error', error));
+
+
+
+
   // 2. This code loads the IFrame Player API code asynchronously.
   var tag = document.createElement('script');
 
@@ -19,7 +53,7 @@
     player = new YT.Player('player', {
       height: '390',
       width: '640',
-      videoId: 'O48Qlt9uwqY',
+      videoId: test[0],
       playerVars: {
         'playsinline': 1
       },
@@ -41,10 +75,11 @@
   var done = false;
   function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.PLAYING && !done) {
-      setTimeout(stopVideo, 6000);
+      setTimeout(stopVideo, 10000);
       done = true;
     }
   }
   function stopVideo() {
     player.stopVideo();
   }
+  
