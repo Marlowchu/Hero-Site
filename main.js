@@ -15,7 +15,7 @@ var rockEl = $('#rockbtn');
 var rapGenre = ["krump music", "dog", "cat"]
 var rnbGenre = ["chris brown", "music video","drake music video"]
 var countryGenre = ["music","country official music videos"]
-var rockGenre = ["official elvis music  video", "candy rain"]
+var rockGenre = ["official elvis music video", "candy rain"]
 
 
 
