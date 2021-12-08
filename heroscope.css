@@ -1,0 +1,51 @@
+img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	display: flex;
+	margin: 3px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 18%;
+	border: 2px solid green;
+	box-shadow: 1px 1px 11px 20px rgb(25, 235, 6);
+}
+
+body {
+	background-color: rgb(12, 12, 197);
+}
+
+li {
+	font-size: 1.5rem;
+	color: green;
+	margin: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	height: 400px;
+	width: 300px;
+	background-color: red;
+	padding: 5px;
+	border-radius: 12px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	border: 6px solid rgb(243, 247, 54);
+}
+
+p {
+	background-color: azure;
+	border-radius: 15px;
+	font-family: fantasy;
+}
+
+span {
+	background-color: black;
+	padding: 5px;
+	border-radius: 10px;
+	opacity: 0.8;
+}
