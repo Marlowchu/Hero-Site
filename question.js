@@ -60,8 +60,8 @@ function chooseAnswer(a){
     if(QuestionandAnswerpile[i].choice){ 
     
         nextDisplay.innerHTML="Next Question";
-        console.log(QuestionandAnswerpile[i].choice)
-        localStorage.setItem('Answer Selected', JSON.stringify(QuestionandAnswerpile[i].choice));
+        console.log(a)
+        localStorage.setItem('Answer Selected', JSON.stringify(`${a}`));
     }
     
     setTimeout(nextQuestion, 500);
