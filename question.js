@@ -33,7 +33,7 @@ var choice2= document.getElementById('choice2');
 var choice3= document.getElementById('choice3');
 var span= document.querySelector('span');
 
-
+var selections = []
 
 var i =0
 
@@ -95,13 +95,54 @@ function chooseAnswer3(a){
     if(QuestionandAnswerpile[i].choice){ 
     
         nextDisplay.innerHTML="Next Question";
+<<<<<<< HEAD
         console.log(a);
         localStorage.setItem('choice D', JSON.stringify(`${QuestionandAnswerpile[i].choice[3]}`));
+=======
+        console.log(QuestionandAnswerpile[i].choice[0])
+        selections.push (QuestionandAnswerpile[i].choice[0]) 
+        localStorage.setItem('Answer Selected', JSON.stringify(selections));
+>>>>>>> c31c043acd6eb9163bea086fa02ae91981614d4b
     }
     
     setTimeout(nextQuestion, 500);
 }
 
+function chooseAnswer1(a){
+    if(QuestionandAnswerpile[i].choice){ 
+    
+        nextDisplay.innerHTML="Next Question";
+        console.log(QuestionandAnswerpile[i].choice[1])
+        selections.push (QuestionandAnswerpile[i].choice[1]) 
+        localStorage.setItem('Answer Selected', JSON.stringify(selections));
+    }
+    
+    setTimeout(nextQuestion, 500);
+}
+
+function chooseAnswer2(a){
+    if(QuestionandAnswerpile[i].choice){ 
+    
+        nextDisplay.innerHTML="Next Question";
+        console.log(QuestionandAnswerpile[i].choice[2])
+        selections.push (QuestionandAnswerpile[i].choice[2]) 
+        localStorage.setItem('Answer Selected', JSON.stringify(selections));
+    }
+    
+    setTimeout(nextQuestion, 500);
+}
+
+function chooseAnswer3(a){
+    if(QuestionandAnswerpile[i].choice){ 
+    
+        nextDisplay.innerHTML="Next Question";
+        console.log(QuestionandAnswerpile[i].choice[3])
+        selections.push (QuestionandAnswerpile[i].choice[3]) 
+        localStorage.setItem('Answer Selected', JSON.stringify(selections));
+    }
+    
+    setTimeout(nextQuestion, 500);
+}
 
 
 
@@ -117,5 +158,5 @@ function nextQuestion () {
 }
 showQuestion()
 
-
+console.log (localStorage.getItem("Answer Selected"))
 
