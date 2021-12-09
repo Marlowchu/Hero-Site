@@ -51,21 +51,57 @@ function showQuestion(){
 }
 
 
-
+console.log(localStorage);
 // localStorage.setItem('choice', JSON.stringify(choice));
 // var choice = JSON.parse(localStorage.getItem('choice'));
 
 
-function chooseAnswer(a){
+function chooseAnswer0(a){
     if(QuestionandAnswerpile[i].choice){ 
     
         nextDisplay.innerHTML="Next Question";
-        console.log(a)
-        localStorage.setItem('Answer Selected', JSON.stringify(`${a}`));
+        console.log(a);
+        
+        localStorage.setItem('choice A', JSON.stringify(`${QuestionandAnswerpile[i].choice[0]}`));
+        console.log(localStorage);
     }
     
     setTimeout(nextQuestion, 500);
 }
+
+function chooseAnswer1(a){
+    if(QuestionandAnswerpile[i].choice){ 
+    
+        nextDisplay.innerHTML="Next Question";
+        console.log(a);
+        localStorage.setItem('choice B', JSON.stringify(`${QuestionandAnswerpile[i].choice[1]}`));
+    }
+    
+    setTimeout(nextQuestion, 500);
+}
+
+function chooseAnswer2(a){
+    if(QuestionandAnswerpile[i].choice){ 
+    
+        nextDisplay.innerHTML="Next Question";
+        console.log(a);
+        localStorage.setItem('choice C', JSON.stringify(`${QuestionandAnswerpile[i].choice[2]}`));
+    }
+    
+    setTimeout(nextQuestion, 500);
+}
+
+function chooseAnswer3(a){
+    if(QuestionandAnswerpile[i].choice){ 
+    
+        nextDisplay.innerHTML="Next Question";
+        console.log(a);
+        localStorage.setItem('choice D', JSON.stringify(`${QuestionandAnswerpile[i].choice[3]}`));
+    }
+    
+    setTimeout(nextQuestion, 500);
+}
+
 
 
 
