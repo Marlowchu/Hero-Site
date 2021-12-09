@@ -117,5 +117,5 @@ function nextQuestion () {
 }
 showQuestion()
 
-
+console.log (localStorage.getItem("Answer Selected"))
 
