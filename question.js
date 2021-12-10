@@ -1,28 +1,23 @@
 var QuestionandAnswerpile= [
     {
-         question : 'Commonly used data types DO NOT include?',
-         choice : ['Strings', 'Booleans','Alerts', 'Numbers'],
-         answer : 'Alerts'
+         question : 'Which ability would you choose?',
+         choice : ['Flying', 'Hyperspeed','Invisibility', 'Super strength'], 
     },
     {
-         question : ' The condition in an if / else statement is enclosed within ____.',
-         choice : ['Quotes', 'Curly brackets', 'Parentheses', 'Square brackets'],
-         answer : 'Parentheses'
+         question : 'What is your favorite subject?',
+         choice : ['Math', 'Science', 'Art', 'History'],    
     },
     {
-         question : ' Arrays in JavaScript can be used to store ____.',
-         choice: ['numbers and strings', 'other arrays', 'booleans', 'All of the above'],
-         answer : 'All of the above'
+         question : ' How would you describe your current mood?',
+         choice: ['Focused', 'Relaxed', 'Rowdy', 'Intense'],
     },
     {
-         question : 'String values must be enclosed within ____ when being assigned to variables. ',
-         choice : ['commas', 'curly brackets', 'quotes', 'parentheses'],
-         answer : 'quotes'
+         question : 'Whats your favorite time of day? ',
+         choice : ['Morning', 'Noon', 'Evening', 'Night'],
     },
     {
          question : 'A very useful tool used during development and debugging for printing content to the debugger is:',
          choice : ['JavaScript','terminal / bash', 'for loops','console.log'],
-         answer : 'console.log'
     }
 ]
 
@@ -95,14 +90,8 @@ function chooseAnswer3(a){
     if(QuestionandAnswerpile[i].choice){ 
     
         nextDisplay.innerHTML="Next Question";
-<<<<<<< HEAD
         console.log(a);
         localStorage.setItem('choice D', JSON.stringify(`${QuestionandAnswerpile[i].choice[3]}`));
-=======
-        console.log(QuestionandAnswerpile[i].choice[0])
-        selections.push (QuestionandAnswerpile[i].choice[0]) 
-        localStorage.setItem('Answer Selected', JSON.stringify(selections));
->>>>>>> c31c043acd6eb9163bea086fa02ae91981614d4b
     }
     
     setTimeout(nextQuestion, 500);
