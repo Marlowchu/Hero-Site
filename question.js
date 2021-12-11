@@ -1,24 +1,26 @@
 var QuestionandAnswerpile= [
     {
-         question : 'Which ability would you choose?',
+        question : 'What is your favoratie genre music?',
+        choice : ['Rap','RnB ','Country','Rock'],
+    },
+    {
+        question : ' How would you describe your current mood?',
+        choice: ['Focused', 'Relaxed', 'Rowdy', 'Intense'],
+    },
+    {
+         question : 'If you could choose one superpower what would it be?',
          choice : ['Flying', 'Hyperspeed','Invisibility', 'Super strength'], 
     },
     {
          question : 'What is your favorite subject?',
          choice : ['Math', 'Science', 'Art', 'History'],    
     },
-    {
-         question : ' How would you describe your current mood?',
-         choice: ['Focused', 'Relaxed', 'Rowdy', 'Intense'],
-    },
+    
     {
          question : 'Whats your favorite time of day? ',
          choice : ['Morning', 'Noon', 'Evening', 'Night'],
-    },
-    {
-         question : 'A very useful tool used during development and debugging for printing content to the debugger is:',
-         choice : ['JavaScript','terminal / bash', 'for loops','console.log'],
     }
+    
 ]
 
 var question= document.getElementById('question');
@@ -50,52 +52,18 @@ console.log(localStorage);
 // localStorage.setItem('choice', JSON.stringify(choice));
 // var choice = JSON.parse(localStorage.getItem('choice'));
 
-
-function chooseAnswer0(a){
+function chooseAnswer(a){
     if(QuestionandAnswerpile[i].choice){ 
     
         nextDisplay.innerHTML="Next Question";
-        console.log(a);
-        
-        localStorage.setItem('choice A', JSON.stringify(`${QuestionandAnswerpile[i].choice[0]}`));
-        console.log(localStorage);
+        console.log(QuestionandAnswerpile[i].choice[1])
+        selections.push (QuestionandAnswerpile[i].choice[1]) 
+        localStorage.setItem('Answer Selected', JSON.stringify(selections));
     }
     
     setTimeout(nextQuestion, 500);
 }
 
-function chooseAnswer1(a){
-    if(QuestionandAnswerpile[i].choice){ 
-    
-        nextDisplay.innerHTML="Next Question";
-        console.log(a);
-        localStorage.setItem('choice B', JSON.stringify(`${QuestionandAnswerpile[i].choice[1]}`));
-    }
-    
-    setTimeout(nextQuestion, 500);
-}
-
-function chooseAnswer2(a){
-    if(QuestionandAnswerpile[i].choice){ 
-    
-        nextDisplay.innerHTML="Next Question";
-        console.log(a);
-        localStorage.setItem('choice C', JSON.stringify(`${QuestionandAnswerpile[i].choice[2]}`));
-    }
-    
-    setTimeout(nextQuestion, 500);
-}
-
-function chooseAnswer3(a){
-    if(QuestionandAnswerpile[i].choice){ 
-    
-        nextDisplay.innerHTML="Next Question";
-        console.log(a);
-        localStorage.setItem('choice D', JSON.stringify(`${QuestionandAnswerpile[i].choice[3]}`));
-    }
-    
-    setTimeout(nextQuestion, 500);
-}
 
 function chooseAnswer1(a){
     if(QuestionandAnswerpile[i].choice){ 
