@@ -1,13 +1,14 @@
-
-
-
+// var test = "rap"
+var startEl = document.querySelector("#start-btn")
+// window.location.assign("./countdown.html");
 
 
 function nextPage() {
-    // window.location.assign("./countdown.html");
+    location.replace("countdown.html");
     // window.document.location = ("countdown.html")
-    window.location.href = "countdown.html";
+    // window.location.href = "countdown.html";
     console.log ("start pressed") 
 
 
 }
+

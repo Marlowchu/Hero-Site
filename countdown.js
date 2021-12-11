@@ -15,14 +15,14 @@ let timersound
 
 
 
-function play () {
+
     i = 3
 
     timer = setInterval(countDown, 1200);
     // s.play ()
     timersound = setInterval(playsound, 700);
    
-}
+
 
 
 function playsound() {
@@ -38,6 +38,7 @@ if (i !=0 ) {
     var image = `<h1>${words[i]}</h1>`
     imageEl.innerHTML = image
     console.log (words [i])
+    // console.log (test)
 }
     if (i===0) {
 
@@ -45,6 +46,7 @@ if (i !=0 ) {
         clearInterval(timersound)
         // s.pause()
         console.log ("load next page")
+        location.assign("question.html");
     }
 
     i--

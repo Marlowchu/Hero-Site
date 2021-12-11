@@ -111,7 +111,7 @@ function getApiVid () {
             }
  
         // create/display video player and add videoId to src url
-        vidPlayerEl.append(`<iframe id= "vidPlayer" width="640" height="390"
+        vidPlayerEl.append(`<iframe id= "vidPlayer" width="300" height="300"
         src="https://www.youtube.com/embed/`+vidId+`?autoplay=1&mute=1">
         </iframe>`);
         i++
