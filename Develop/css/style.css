@@ -72,15 +72,18 @@ path {
     height: 80px; 
     background-color:goldenrod; 
     
+    
 
 }
 .logo {
     display: inline-block;
-    vertical-align: top;
-    width: 120px;
-    height: 70px;
-    margin-right: 20px;
-    margin-top: 6px;
+    vertical-align: middle;
+    width: 125px;
+    height: 80px;
+    margin-right: 130px;
+    margin-left: 400px;
+    margin-top: 3px;
+    
     
       /* display: block;
       width: 100px;
@@ -95,13 +98,19 @@ path {
     line-height: 10px;
     color: black;
    padding-top: 40px;
+   margin: 0;
     
     
 }
 .dropdown {
     float: left;
     overflow: hidden;
-  }
+}
+.dropdown2 {
+  float: left;
+  overflow: hidden;
+}
+
   
   .dropdown .dropbtn {
     font-size: 16px;  
@@ -111,14 +120,37 @@ path {
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    margin: 10;
+  }
+  .dropdown2 .dropbtn2 {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 10;
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
   }
+
+  .navbar a:hover, .dropdown2:hover .dropbtn2 {
+    background-color: red;
+  }
   
   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content2 {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -135,12 +167,28 @@ path {
     display: block;
     text-align: left;
   }
+  .dropdown-content2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
   
   .dropdown-content a:hover {
     background-color: #ddd;
   }
   
   .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content2 a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown2:hover .dropdown-content2 {
     display: block;
   }
 
