@@ -4,7 +4,7 @@ var startEl = document.querySelector("#start-btn")
 
 
 function nextPage() {
-    location.replace("countdown.html");
+    location.assign("countdown.html");
     // window.document.location = ("countdown.html")
     // window.location.href = "countdown.html";
     console.log ("start pressed") 
