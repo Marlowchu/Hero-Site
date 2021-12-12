@@ -8,12 +8,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* background-image: url(../Develop/images/space.jpeg); */
+    
     font-family: myfirstfont;
 }
-body{
-    background-image: url(../Develop/images/space.jpeg);
-}
+
+/* body{ */
+    /* background-image: url(../Develop/images/space.jpeg); */
+    /* background-clip: url(../Develop/images/Pexels\ Videos\ 3867.mp4); */
+/* } */
 
 
 header{
@@ -67,7 +69,7 @@ path {
     width: 100px;
     height: 50px;
     margin-right: 20px;
-    margin-top: 10px;    /
+    margin-top: 10px;    
 }
 .navigation-bar > a {
     display: inline-block;

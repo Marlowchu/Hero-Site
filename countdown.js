@@ -1,6 +1,5 @@
 
-var i 
-
+var i = 3
 
 var imageEl = document.querySelector(".image")
 
@@ -10,17 +9,12 @@ var s = document.getElementById("sound");
 
 var words = ["","READY?","YOU","ARE",]
 
-let timer
-let timersound
 
+let timersound = setInterval(playsound, 800);
 
-
-
-    i = 3
-
-    timer = setInterval(countDown, 1200);
+let timer = setInterval(countDown, 1500);
     // s.play ()
-    timersound = setInterval(playsound, 700);
+    
    
 
 
@@ -34,6 +28,7 @@ function countDown() {
 
 if (i !=0 ) {
     
+    // s.play ()
     // var image = `<img src="./countdownassets/${i}.jpg" alt="" class=" image col p-4"></img>`
     var image = `<h1>${words[i]}</h1>`
     imageEl.innerHTML = image
