@@ -1,14 +1,22 @@
-// var test = "rap"
-var startEl = document.querySelector("#start-btn")
-// window.location.assign("./countdown.html");
+
+var inputEl = document.querySelector("#inputText")
+var input
+var test
 
 
 function nextPage() {
-    location.assign("countdown.html");
-    // window.document.location = ("countdown.html")
-    // window.location.href = "countdown.html";
-    console.log ("start pressed") 
 
+    input = document.getElementById("inputText").value;
 
+    test = input.length
+    
+    
+    if (test != 0) {
+        
+   input = JSON.stringify (input);
+   localStorage.setItem("name", input)
+
+   location.assign("countdown.html");
+}
 }
 
