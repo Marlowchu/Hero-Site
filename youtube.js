@@ -1,6 +1,7 @@
 
-var vidId = []
-var input = "marvel"
+var vidId 
+var lengthVid
+var input 
 var vidPlayerEl = $('#player');
 var i = 0
 
@@ -12,16 +13,18 @@ var rnbEl = $('#rnbbtn');
 var countryEl = $('#countrybtn');
 var rockEl = $('#rockbtn');
 
-var rapGenre = ["krump music", "dog", "cat"]
-var rnbGenre = ["chris brown", "music video","drake music video"]
-var countryGenre = ["music","country official music videos"]
-var rockGenre = ["official elvis music  video", "candy rain"]
+var rapGenre = ["Rarin - Toxic Ends (Official Music Video)", "Idris Elba - Private Garden - Official Music Video HQ", "B Free - Teleport Me (feat. Jay Squared) [Official Music Video]"]
+var rnbGenre = ["Chris Brown - All night (Official Video)", "New Drake, The Weekend I'm Numb Ft Lil' Wayne Music Video 2019","Kelly Rowland - Dumb ft. Trevor Jackson"]
+var countryGenre = ["Like A Country Love Song [Official Music Video]","Megan Collins - Jenga | Official Music Video", "Dylan Joseph - 27007 (Official Music Video)"]
+var rockGenre = ["Young Other - Between The Few (Official Music Video)", "STAGS - Sun Bleached Baby (Official Music Video)", "Petra - Creed (Official Music Video)"]
 
 
 
 // button click
       searchEl.on('click', function () {
         
+        lengthVid = "medium"
+
         // take the input and save it to be passed to api call
         input = document.getElementById("input").value;
 
@@ -31,6 +34,8 @@ var rockGenre = ["official elvis music  video", "candy rain"]
 
 // button click
     rapEl.on('click', function () {
+
+      lengthVid = "short"
         
         // randomly choose a index number from Genre array
          var index = Math.floor(Math.random() * rapGenre.length);
@@ -45,6 +50,8 @@ var rockGenre = ["official elvis music  video", "candy rain"]
 // button click
   rnbEl.on('click', function () {
         
+    lengthVid = "short"
+
     // randomly choose a index number from Genre array
      var index = Math.floor(Math.random() * rnbGenre.length);
 
@@ -58,6 +65,8 @@ var rockGenre = ["official elvis music  video", "candy rain"]
 // button click
 countryEl.on('click', function () {
         
+  lengthVid = "short"
+
     // randomly choose a index number from Genre array
      var index = Math.floor(Math.random() * countryGenre.length);
 
@@ -71,6 +80,8 @@ countryEl.on('click', function () {
 // button click
 rockEl.on('click', function () {
         
+    lengthVid = "medium"
+
     // randomly choose a index number from Genre array
      var index = Math.floor(Math.random() * rockGenre.length);
 
@@ -88,7 +99,7 @@ rockEl.on('click', function () {
 
 function getApiVid () {
     // api url with key and parameters
-    var requestUrl = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyCuPrTUMPdfPTBq-3PnOOxfFCDoe_FeLDc&part=snippet&maxResults=1&q="+ input +"&type=video&videoDuration=medium&videoEmbeddable=true&videoLicense=creativeCommon";
+    var requestUrl = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyCuPrTUMPdfPTBq-3PnOOxfFCDoe_FeLDc&part=snippet&maxResults=1&q="+ input +"&type=video&videoDuration="+ lengthVid +"&videoEmbeddable=true&videoLicense=creativeCommon";
 
 
     // call api
