@@ -56,8 +56,8 @@ function chooseAnswer(a){
     if(QuestionandAnswerpile[i].choice){ 
     
         nextDisplay.innerHTML="Next Question";
-        console.log(QuestionandAnswerpile[i].choice[1])
-        selections.push (QuestionandAnswerpile[i].choice[1]) 
+        console.log(QuestionandAnswerpile[i].choice[0])
+        selections.push (QuestionandAnswerpile[i].choice[0]) 
         localStorage.setItem('Answer Selected', JSON.stringify(selections));
     }
     
@@ -97,10 +97,9 @@ function chooseAnswer3(a){
         selections.push (QuestionandAnswerpile[i].choice[3]) 
         localStorage.setItem('Answer Selected', JSON.stringify(selections));
     }
-    
-    setTimeout(nextQuestion, 500);
+    nextQuestion ()
+    // setTimeout(nextQuestion, 500);
 }
-
 
 
 function nextQuestion () {
@@ -111,9 +110,10 @@ function nextQuestion () {
     }
     else{
         QuestionandAnswerpile.length;
+
+        console.log ("go to cards page")
     }
 }
 showQuestion()
 
 console.log (localStorage.getItem("Answer Selected"))
-

@@ -11,17 +11,11 @@
     
     font-family: myfirstfont;
 }
-<<<<<<< HEAD:css/style.css
 
 /* body{ */
     /* background-image: url(../Develop/images/space.jpeg); */
     /* background-clip: url(../Develop/images/Pexels\ Videos\ 3867.mp4); */
 /* } */
-=======
-/* body{
-    background-image: url(../Develop/images/space.jpeg);
-} */
->>>>>>> f04128fbbc60a58afd2f09585a26619e8ad95132:Questions/question.css
 
 
 /* header{
@@ -75,15 +69,9 @@
     width: 100px;
     height: 50px;
     margin-right: 20px;
-<<<<<<< HEAD:css/style.css
     margin-top: 10px;    
 }
 .navigation-bar > a {
-=======
-    margin-top: 10px;    /
-} */
-/* .navigation-bar > a {
->>>>>>> f04128fbbc60a58afd2f09585a26619e8ad95132:Questions/question.css
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;

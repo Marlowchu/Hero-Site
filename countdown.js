@@ -55,7 +55,7 @@ if (i !=0 ) {
         clearInterval(timersound)
         // s.pause()
 
-        location.assign("question.html");
+        location.assign("Questions/question.html");
     }
 
     i--
