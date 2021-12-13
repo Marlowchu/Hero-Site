@@ -19,7 +19,7 @@
     min-width: 100%;
     min-height: 100%;
 }
-  
+ 
 
 body{
     margin-left: 30px;
@@ -29,7 +29,9 @@ body{
 
 .container{
     margin: 10%;
-    padding-left: 15%;
+    margin-left: 20%;
+    /* padding-left: 15%; */
+    background-color: rgba(24, 24, 27,0.8);
     /* padding-left: 400px ; */
     position: fixed;
     color: bisque;
