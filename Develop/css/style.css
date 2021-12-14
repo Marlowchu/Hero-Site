@@ -46,7 +46,7 @@ header{
     1px 22px 10px rgba(16,16,16,0.2),
     1px 25px 35px rgba(16,16,16,0.2),
     1px 30px 60px rgba(16,16,16,0.4);
-    margin-top: -120px;
+    margin-top: -100px;
 
 }
 
@@ -76,13 +76,16 @@ path {
 
 }
 .logo {
-    display: inline-block;
+    display: flex;
     vertical-align: middle;
     width: 125px;
     height: 80px;
-    margin-right: 130px;
-    margin-left: 400px;
+    /* margin-right: 130px;
+    margin-left: 400px; */
     margin-top: 3px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     
     
       /* display: block;
