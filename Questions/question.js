@@ -1,10 +1,10 @@
 var QuestionandAnswerpile= [
     {
-        question : 'What is your favoratie genre music?',
+        question : 'What is your favorite genre music?',
         choice : ['Rap','RnB ','Country','Rock'],
     },
     {
-        question : ' How would you describe your current mood?',
+        question : 'How would you describe your current mood?',
         choice: ['Focused', 'Relaxed', 'Rowdy', 'Intense'],
     },
     {
@@ -17,8 +17,8 @@ var QuestionandAnswerpile= [
     },
     
     {
-         question : 'Whats your favorite time of day? ',
-         choice : ['Morning', 'Noon', 'Evening', 'Night'],
+         question : 'Whats your favorite type of movie? ',
+         choice : ['Comedy', 'Action', 'Scary', 'Sci-Fi'],
     }
     
 ]
@@ -44,7 +44,7 @@ function showQuestion(){
     choice2.innerHTML= QuestionandAnswerpile[i].choice[2];
     choice3.innerHTML= QuestionandAnswerpile[i].choice[3];
     whatQueNum.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+QuestionandAnswerpile.length;
-    nextDisplay.innerHTML = ""
+    // nextDisplay.innerHTML = ""
 }
 
 
@@ -55,7 +55,7 @@ console.log(localStorage);
 function chooseAnswer(a){
     if(QuestionandAnswerpile[i].choice){ 
     
-        nextDisplay.innerHTML="Next Question";
+        // nextDisplay.innerHTML="Next Question";
         console.log(QuestionandAnswerpile[i].choice[0])
         selections.push (QuestionandAnswerpile[i].choice[0]) 
         localStorage.setItem('Answer Selected', JSON.stringify(selections));
@@ -68,7 +68,7 @@ function chooseAnswer(a){
 function chooseAnswer1(a){
     if(QuestionandAnswerpile[i].choice){ 
     
-        nextDisplay.innerHTML="Next Question";
+        // nextDisplay.innerHTML="Next Question";
         console.log(QuestionandAnswerpile[i].choice[1])
         selections.push (QuestionandAnswerpile[i].choice[1]) 
         localStorage.setItem('Answer Selected', JSON.stringify(selections));
@@ -80,7 +80,7 @@ function chooseAnswer1(a){
 function chooseAnswer2(a){
     if(QuestionandAnswerpile[i].choice){ 
     
-        nextDisplay.innerHTML="Next Question";
+        // nextDisplay.innerHTML="Next Question";
         console.log(QuestionandAnswerpile[i].choice[2])
         selections.push (QuestionandAnswerpile[i].choice[2]) 
         localStorage.setItem('Answer Selected', JSON.stringify(selections));
@@ -92,7 +92,7 @@ function chooseAnswer2(a){
 function chooseAnswer3(a){
     if(QuestionandAnswerpile[i].choice){ 
     
-        nextDisplay.innerHTML="Next Question";
+        // nextDisplay.innerHTML="Next Question";
         console.log(QuestionandAnswerpile[i].choice[3])
         selections.push (QuestionandAnswerpile[i].choice[3]) 
         localStorage.setItem('Answer Selected', JSON.stringify(selections));

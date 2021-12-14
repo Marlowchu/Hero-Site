@@ -23,6 +23,12 @@ inputName = inputName.toUpperCase()
 word.push(inputName);
 word.push("");
 
+var image = `<h1>${word[x]}</h1>`
+imageEl.innerHTML = image
+console.log (word [x])
+
+i--
+x++
 
 let timersound = setInterval(playsound, 800);
 
@@ -47,6 +53,7 @@ if (i !=0 ) {
     var image = `<h1>${word[x]}</h1>`
     imageEl.innerHTML = image
     console.log (word [x])
+    
     // console.log (test)
 }
     if (i===0) {
