@@ -74,3 +74,6 @@ body{
     1px 30px 60px rgba(16,16,16,0.4); */
 }
 
+.option:hover  {
+    background-color: rgba(255, 0, 0, 0.397);
+  }
