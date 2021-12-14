@@ -36,6 +36,7 @@ var i =0
 
 function showQuestion(){
     for(var y=0; y<span.length; y++){
+        
      
     }
     question.innerHTML= 'Question '+' # '+(i+1)+ ': ' +QuestionandAnswerpile [i].question;
@@ -45,6 +46,11 @@ function showQuestion(){
     choice3.innerHTML= QuestionandAnswerpile[i].choice[3];
     whatQueNum.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+QuestionandAnswerpile.length;
     nextDisplay.innerHTML = ""
+    choice0.style.backgroundColor =""
+    choice1.style.backgroundColor =""
+    choice2.style.backgroundColor =""
+    choice3.style.backgroundColor =""
+    
 }
 
 
@@ -54,7 +60,8 @@ console.log(localStorage);
 
 function chooseAnswer(a){
     if(QuestionandAnswerpile[i].choice){ 
-    
+        
+        choice0.style.backgroundColor ='green'
         nextDisplay.innerHTML="Next Question";
         console.log(QuestionandAnswerpile[i].choice[1])
         selections.push (QuestionandAnswerpile[i].choice[1]) 
@@ -68,6 +75,7 @@ function chooseAnswer(a){
 function chooseAnswer1(a){
     if(QuestionandAnswerpile[i].choice){ 
     
+        choice1.style.backgroundColor ='green'
         nextDisplay.innerHTML="Next Question";
         console.log(QuestionandAnswerpile[i].choice[1])
         selections.push (QuestionandAnswerpile[i].choice[1]) 
@@ -80,6 +88,7 @@ function chooseAnswer1(a){
 function chooseAnswer2(a){
     if(QuestionandAnswerpile[i].choice){ 
     
+        choice2.style.backgroundColor ='green'
         nextDisplay.innerHTML="Next Question";
         console.log(QuestionandAnswerpile[i].choice[2])
         selections.push (QuestionandAnswerpile[i].choice[2]) 
@@ -92,6 +101,7 @@ function chooseAnswer2(a){
 function chooseAnswer3(a){
     if(QuestionandAnswerpile[i].choice){ 
     
+        choice3.style.backgroundColor ='green'
         nextDisplay.innerHTML="Next Question";
         console.log(QuestionandAnswerpile[i].choice[3])
         selections.push (QuestionandAnswerpile[i].choice[3]) 
