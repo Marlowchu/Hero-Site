@@ -155,6 +155,10 @@ fetch(requestUrl)
 
 console.log(random);
 
+
+
+
+
 // this.data.forEach((item) => {
 // console.log(this.requestUrl);
 // });

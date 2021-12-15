@@ -66,11 +66,12 @@ text {
 	/* position: fixed; */
 }
 .logo {
-	display: flex;
+	display: inline-block;
 	vertical-align: middle;
 	width: 111px;
 	height: 80px;
-	margin: auto;
+	/* margin: auto; */
+	
 	/* margin-left: -50%; */
 	margin-top: 3px;
 
