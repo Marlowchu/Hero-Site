@@ -14,7 +14,7 @@ const comedyArr = [
 		name: 'Superbad',
 	},
 	{
-		name: 'napolean+dynamite',
+		name: 'the+hangover',
 	},
 	{
 		name: 'friday',

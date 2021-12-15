@@ -71,6 +71,13 @@ li {
 	justify-content: center;
 	border: 6px solid rgba(244, 247, 54, 0.575);
 	float: left;
+	position: relative;
+}
+
+#player {
+	position: relative;
+	margin-left: 13px;
+	margin-right: 10px;
 }
 
 p {

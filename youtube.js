@@ -2,7 +2,7 @@
 var vidId 
 var lengthVid
 var input 
-var vidPlayerEl = $('#player');
+var vidPlayerEl = document.querySelector("#player")
 var i = 0
 
 // array of possible choices
@@ -15,15 +15,13 @@ var rockGenre = ["Young Other - Between The Few (Official Music Video)", "STAGS 
 var musicChoice 
 
 // get what was selected from local storage
-musicChoice = localStorage.getItem("Answer Selected");
-musicChoice = JSON.parse(musicChoice);
+musicChoice = JSON.parse(localStorage.getItem("Answer Selected"));
 // look at the value in index 0 because that is where the music question is located
 musicChoice = musicChoice[0];
 
 
     if (musicChoice == "Rap") {
       
-    
       lengthVid = "short"
         
         // randomly choose a index number from Genre array
@@ -98,47 +96,25 @@ function getApiVid () {
 
         if (i >= 1) {
             // clear video before loading new video
-            var myobj = document.getElementById("vidPlayer");
-            myobj.remove();
+            // var myobj = document.getElementById("vidPlayer");
+            // myobj.remove();
+            vidPlayerEl.innerHTML = ""
 
             }
  
         // create/display video player and add videoId to src url
-        // vidPlayerEl.append(`<iframe id= "vidPlayer" width="300" height="300"
-        // src="https://www.youtube.com/embed/`+vidId+`?autoplay=1&mute=1">
-        // </iframe>`);
 
+        // var att = document.createAttribute ("src")
+        // att.value = "hello"
+        // vidPlayerEl.setAttribute(att);  
 
-        var playVid = src=`https://www.youtube.com/embed/`+vidId+`?autoplay=1&mute=1">`;
-       
-        var each = document.createElement('li');
-
-        each.append(document.createTextNode(`<iframe id= "vidPlayer" width="300" height="300"
-        
-        </iframe>`));
-
-        head.innerHTML = `<div class='card'><p>Your Super Hero is</p><span></span>${playVid}</div>`;
-        
+        vidPlayerEl.innerHTML = `<iframe id= "vidPlayer" width="300" height="300"
+        src="https://www.youtube.com/embed/`+vidId+`?autoplay=1&mute=1">
+        </iframe>`;
         i++
 
-    
-  
-      // ${themName}
+      });
+  }
 
-  // var playVid = `<iframe id= "vidPlayer" width="300" height="300"
-  //       src="https://www.youtube.com/embed/`+vidId+`?autoplay=1&mute=1">
-  //       </iframe>`;
+  // https://www.youtube.com/embed/"+vidId+"?autoplay=1&mute=1
 
-  //   char.forEach((item, i) => {
-      // var each = document.createElement('li');
-  //     console.log(item.thumbnail);
-     
-  
-  //     each.append(document.createTextNode(item.thumbnail[i]));
-  
-  //     return (marvel.appendChild(
-  //       each
-  //     ).innerHTML = `<div class='card'><p>Your Super Hero is</p><span>${themName}</span>${playVid}</div>`);
-    
-    
-  

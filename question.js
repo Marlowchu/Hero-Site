@@ -1,7 +1,7 @@
 var QuestionandAnswerpile = [
 	{
 		question: 'What is your favorite genre music?',
-		choice: ['Rap', 'RnB ', 'Country', 'Rock'],
+		choice: ['Rap', 'RnB', 'Country', 'Rock'],
 	},
 	{
 		question: 'How would you describe your current mood?',
