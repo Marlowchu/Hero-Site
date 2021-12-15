@@ -1,6 +1,6 @@
 var QuestionandAnswerpile= [
     {
-        question : 'What is your favorite genre music?',
+        question : 'What is your favorite genre of music?',
         choice : ['Rap','RnB','Country','Rock'],
     },
     {
@@ -48,7 +48,7 @@ function showQuestion(){
 }
 
 
-console.log(localStorage);
+// console.log(localStorage);
 // localStorage.setItem('choice', JSON.stringify(choice));
 // var choice = JSON.parse(localStorage.getItem('choice'));
 
@@ -111,10 +111,10 @@ function nextQuestion () {
     else{
         QuestionandAnswerpile.length;
 
-        
-        // location.assign("../youtube.html");
+
+        location.assign("../youtube.html");
     }
 }
 showQuestion()
 
-console.log (localStorage.getItem("Answer Selected"))
+// console.log (localStorage.getItem("Answer Selected"))
