@@ -22,7 +22,7 @@ word.push('');
 
 let timersound = setInterval(playsound, 1400);
 
-let timer = setInterval(countDown, 1200);
+let timer = setInterval(countDown, 1000);
 // s.play ()
 
 function playsound() {

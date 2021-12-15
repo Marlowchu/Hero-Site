@@ -95,9 +95,10 @@ fetch(omdbUrl)
 	.then((data) => {
 		const movie = data.Poster;
 		console.log(data.BoxOffice);
+		var plot = data.Plot;
 		// var display = document.createElement('li');
 		// display.append(document.createTextNode(movie));
-		head.innerHTML = `<div class='card'><p>Your Movie is</p><span>${data.Title}</span><img src=${movie} /> </div>`;
+		head.innerHTML = `<div class='cardMov' data-text="${plot}"><p>Your Movie is</p><span>${data.Title}</span><img src=${movie} /> </div>`;
 
 		console.log(data);
 

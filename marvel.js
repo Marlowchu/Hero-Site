@@ -130,6 +130,7 @@ fetch(requestUrl)
 		const dataList = data;
 		const char = dataList.data.results;
 		console.log(dataList.data.results[0].description);
+		var details = dataList.data.results[0].description;
 		char.forEach((item, i) => {
 			var each = document.createElement('li');
 			console.log(item.thumbnail);
@@ -141,7 +142,7 @@ fetch(requestUrl)
 
 			return (marvel.appendChild(
 				each
-			).innerHTML = `<div class='card'><p>Your Super Hero is</p><span>${themName}</span> <img src=${them} /></div>`);
+			).innerHTML = `<div class='card' data-text="${details}"><p>Your Super Hero is</p><span>${themName}</span> <img src=${them} /></div>`);
 		});
 
 		console.log(data);
@@ -155,9 +156,12 @@ fetch(requestUrl)
 
 console.log(random);
 
+var logoHome = document.querySelector('.logo');
 
-
-
+logoHome.addEventListener('click', () => {
+	console.log('hey');
+	location.assign('Main.html');
+});
 
 // this.data.forEach((item) => {
 // console.log(this.requestUrl);

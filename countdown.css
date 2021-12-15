@@ -36,6 +36,8 @@ animation: mymove 5s;
 
 @keyframes mymove {
     50% {font-size: 400px;}
+
+    
 /* 
 path {
     fill: transparent;

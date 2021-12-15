@@ -108,3 +108,24 @@ body {
 	opacity: 1;
 	transition: 0.8s;
 }
+
+@media screen and (max-width: 675px) {
+	.background {
+		background-image: url('./Develop/images/heros-removebg.png');
+		/* align-items: center;
+        text-align: center;
+        justify-content: center; */
+		position: fixed;
+		/* top: 50%;
+		left: 50%; */
+		transform: translate(-50%, -50%);
+		/* margin-top: -50px;
+        margin-left: -100px; */
+		/* z-index: 0; */
+		height: 730px;
+		width: 250px;
+		margin-left: -5%;
+		/* background-size: auto; */
+		/* background-color: aqua; */
+	}
+}
