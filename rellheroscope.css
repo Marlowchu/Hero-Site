@@ -59,6 +59,7 @@ h1 {
 	padding-top: 40px;
 	margin: 0;
 	margin-bottom: 50px !important;
+	box-shadow: 1px 1px 15px 8px rgba(255, 0, 0, 0.514);
 }
 
 img {
@@ -140,7 +141,7 @@ li {
 	word-wrap: break-word;
 	margin-top: -101%;
 	margin-left: -50%;
-	overflow: hidden;
+	overflow: visible;
 	opacity: 0;
 	transition: 1.6s;
 }
@@ -157,13 +158,13 @@ li {
 }
 
 .cardMov:hover:after {
-	background-color: rgba(240, 248, 255, 0.61);
+	background-color: rgba(1, 12, 22, 0.699);
 	opacity: 1;
 	border-radius: 8px;
 }
 
 .card:hover:after {
-	background-color: rgba(240, 248, 255, 0.555);
+	background-color: rgba(0, 8, 15, 0.637);
 	opacity: 1;
 	border-radius: 8px;
 }

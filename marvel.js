@@ -131,6 +131,8 @@ fetch(requestUrl)
 		const char = dataList.data.results;
 		console.log(dataList.data.results[0].description);
 		var details = dataList.data.results[0].description;
+		var detailsNew = details.replaceAll('"', '');
+
 		char.forEach((item, i) => {
 			var each = document.createElement('li');
 			console.log(item.thumbnail);
@@ -142,7 +144,7 @@ fetch(requestUrl)
 
 			return (marvel.appendChild(
 				each
-			).innerHTML = `<div class='card' data-text="${details}"><p>Your Super Hero is</p><span>${themName}</span> <img src=${them} /></div>`);
+			).innerHTML = `<div class='card' data-text='${detailsNew}'><p>Your Super Hero is</p><span>${themName}</span> <img src=${them} /></div>`);
 		});
 
 		console.log(data);
