@@ -30,14 +30,13 @@ body{
 .container{
     margin: 10%;
     margin-left: 20%;
-    /* padding-left: 15%; */
     background-color: rgba(24, 24, 27,0.8);
+    border: 1px solid;
+    
     border-radius: 30px;
-    /* padding-left: 400px ; */
     position: fixed;
     color: bisque;
     font-size: 25px;
-    /* background-color: white; */
     background-image: url(../Develop/images/heros-removebg.png);
     background-repeat: no-repeat;
     background-position: center;
