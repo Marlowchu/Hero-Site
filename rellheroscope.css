@@ -202,6 +202,7 @@ span {
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
 		margin-left: 5px;
+		margin-top: 40px;
 		position: relative;
 	}
 
@@ -217,7 +218,7 @@ span {
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
 		margin-left: -25px;
-		margin-bottom: 8px;
+		margin-bottom: 15px;
 		position: relative;
 	}
 }
