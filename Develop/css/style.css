@@ -357,7 +357,15 @@ button {
 	}
 }
 
-@media screen and (max-width: 500px) and (min-width: 313px) {
+@media screen and (max-width: 929px) and (min-width: 313px) {
+	.navigation-bar {
+		margin-top: -7.7px;
+		width: 105vw;
+		height: 80px;
+		background-color: goldenrod;
+		box-shadow: 1px 1px 15px 8px rgba(255, 0, 0, 0.514);
+	}
+
 	.dropdown .dropbtn {
 		font-size: 16px;
 		border: none;
@@ -367,7 +375,7 @@ button {
 		background-color: inherit;
 		font-family: inherit;
 		margin-top: -8%;
-		margin-left: -0%;
+		margin-left: 1.2%;
 		position: absolute;
 	}
 	.dropdown2 .dropbtn2 {
