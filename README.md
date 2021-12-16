@@ -6,6 +6,6 @@ The User, upon answering the questions, is presented with a payload of data that
 
 The site presents several aspects of reading, researching, and fun while giving the User an interavtice experience that they'll want to try again and again!
 
-Deployed Website Link:
+Deployed Website Link: https://marlowchu.github.io/Hero-Site/index.html
 
-Screenshot of Site:
+Screenshot of Site: <img src="./Develop/images/HeroScope_Gif.gif">
