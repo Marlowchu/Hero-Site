@@ -90,6 +90,7 @@ img::after {
 	position: fixed;
 	right: 0;
 	bottom: 0;
+
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -1;
@@ -99,6 +100,8 @@ body {
 	/* font-size: 17px; */
 	/* background-image: url(../Develop/images/space.jpeg); */
 	background-clip: url('./Develop/images/Pexels/ Videos/ 3867.mp4)');
+	z-index: -1;
+	height: 100px;
 	/* background-size: 100% auto; */
 	/* margin: 0; */
 	/* font-size: 17px; */
@@ -140,6 +143,7 @@ ol {
 	width: auto;
 	margin-top: -43.4px;
 	position: relative;
+	z-index: -1;
 }
 
 .card:hover,
@@ -183,6 +187,7 @@ ol {
 }
 
 #player {
+	padding-right: 8.5px;
 	position: relative;
 	margin-left: 13px;
 	margin-right: 111px;
@@ -202,7 +207,52 @@ span {
 	opacity: 0.8;
 }
 
-@media screen and (max-width: 500px) and (min-width: 352px) {
+@media screen and (max-width: 500px) and (min-width: 313px) {
+	.navigation-bar {
+		margin-top: -7.6px;
+		margin-left: -15px;
+		margin-right: -30px;
+		/* margin-right: 20px; */
+		width: 104vw;
+		height: 80px;
+		background-color: goldenrod;
+		box-shadow: 1px 1px 15px 8px rgba(255, 0, 0, 0.514);
+		/* position: fixed; */
+	}
+
+	#myVideo {
+		background-position: center;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: auto;
+		min-width: 80%;
+		min-height: 100%;
+		z-index: -1;
+	}
+
+	li {
+		font-size: 1.8rem;
+		font-family: myfirstfont;
+		color: green;
+		margin: 5px;
+		margin-left: -8px !important;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		display: inline-flex;
+	}
+
+	.logDiv {
+		width: auto;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.card {
 		height: 444px;
 		width: 292px;
@@ -214,9 +264,14 @@ span {
 		justify-content: center;
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
-		margin-left: -10px;
+		margin-left: -35px;
+		margin-right: 10px;
 		margin-top: 40px;
 		position: relative;
+	}
+
+	#player {
+		margin-right: -111px !important;
 	}
 
 	.cardMov {
@@ -230,8 +285,9 @@ span {
 		justify-content: center;
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
+		margin-right: 10px;
 		margin-top: -15px;
-		margin-left: -40px;
+		margin-left: -50px;
 		margin-bottom: 15px;
 		position: relative;
 	}
@@ -249,6 +305,7 @@ span {
 		margin-left: -2px;
 		margin-right: 100px;
 		margin-top: 15px;
+		padding-left: 0px;
 	}
 
 	li {
@@ -264,7 +321,19 @@ span {
 	}
 }
 
-@media screen and (max-width: 1471px) and (min-width: 767px) {
+@media screen and (max-width: 1471px) and (min-width: 768px) {
+	.navigation-bar {
+		margin-top: -7.6px;
+		margin-left: -15px;
+		margin-right: -30px;
+		/* margin-right: 20px; */
+		width: 102vw;
+		height: 80px;
+		background-color: goldenrod;
+		box-shadow: 1px 1px 15px 8px rgba(255, 0, 0, 0.514);
+		/* position: fixed; */
+	}
+
 	#player {
 		position: relative;
 		margin-left: 50px;
@@ -283,7 +352,7 @@ span {
 		justify-content: center;
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
-		margin-left: 433px;
+		margin-left: -84%;
 		margin-top: 40px;
 		position: relative;
 	}
@@ -305,14 +374,14 @@ span {
 		position: relative;
 	}
 	ol {
-		width: 1000px;
+		width: auto;
 		height: 300px;
 		margin-top: -33.4px;
 		position: relative;
 	}
 }
 
-@media screen and (max-width: 766px) and (min-width: 501px) {
+@media screen and (max-width: 768px) and (min-width: 501px) {
 	.card {
 		height: 444px;
 		width: 300px;
