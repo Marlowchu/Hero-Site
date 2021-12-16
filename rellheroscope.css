@@ -1,6 +1,6 @@
 @font-face {
 	font-family: myfirstfont;
-	src: url(../Develop/fonts/FontsFree-Net-GR-Milesons-Three.ttf);
+	src: url(./Develop/fonts/FontsFree-Net-GR-Milesons-Three.ttf);
 }
 
 h1 {
@@ -98,7 +98,7 @@ img::after {
 body {
 	/* font-size: 17px; */
 	/* background-image: url(../Develop/images/space.jpeg); */
-	background-clip: url('../Develop/images/Pexels/ Videos/ 3867.mp4);');
+	background-clip: url('./Develop/images/Pexels/ Videos/ 3867.mp4)');
 	/* background-size: 100% auto; */
 	/* margin: 0; */
 	/* font-size: 17px; */
