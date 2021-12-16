@@ -162,7 +162,7 @@ var logoHome = document.querySelector('.logo');
 
 logoHome.addEventListener('click', () => {
 	console.log('hey');
-	location.assign('Main.html');
+	location.assign('index.html');
 });
 
 // this.data.forEach((item) => {
