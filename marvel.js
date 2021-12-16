@@ -107,16 +107,16 @@ const arrFly = [
 
 if (selected == 'Flying') {
 	letter = arrFly[random].name;
-	var requestUrl = `http://gateway.marvel.com/v1/public/characters?name=${letter}&ts=${ts}&apikey=${pubKey}&hash=${encrypted}`;
+	var requestUrl = `https://gateway.marvel.com/v1/public/characters?name=${letter}&ts=${ts}&apikey=${pubKey}&hash=${encrypted}`;
 } else if (selected == 'Super strength') {
 	letter = arrStrength[random].name;
-	var requestUrl = `http://gateway.marvel.com/v1/public/characters?name=${letter}&ts=${ts}&apikey=${pubKey}&hash=${encrypted}`;
+	var requestUrl = `https://gateway.marvel.com/v1/public/characters?name=${letter}&ts=${ts}&apikey=${pubKey}&hash=${encrypted}`;
 } else if (selected == 'Invisibility') {
 	letter = arrInvisible[random2].name;
-	var requestUrl = `http://gateway.marvel.com/v1/public/characters?name=${letter}&ts=${ts}&apikey=${pubKey}&hash=${encrypted}`;
+	var requestUrl = `https://gateway.marvel.com/v1/public/characters?name=${letter}&ts=${ts}&apikey=${pubKey}&hash=${encrypted}`;
 } else if (selected == 'Hyperspeed') {
 	letter = arrSpeed[random2].name;
-	var requestUrl = `http://gateway.marvel.com/v1/public/characters?name=${letter}&ts=${ts}&apikey=${pubKey}&hash=${encrypted}`;
+	var requestUrl = `https://gateway.marvel.com/v1/public/characters?name=${letter}&ts=${ts}&apikey=${pubKey}&hash=${encrypted}`;
 }
 
 const marvel = document.querySelector('ol');

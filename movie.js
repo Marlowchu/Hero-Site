@@ -76,16 +76,16 @@ const sci_fiArr = [
 // movieNameReturn();
 if (selectedMov == 'Comedy') {
 	matrix = comedyArr[randomMov].name;
-	var omdbUrl = `http://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
+	var omdbUrl = `https://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
 } else if (selectedMov == 'Action') {
 	matrix = actionArr[randomMov].name;
-	var omdbUrl = `http://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
+	var omdbUrl = `https://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
 } else if (selectedMov == 'Scary') {
 	matrix = scaryArr[randomMov].name;
-	var omdbUrl = `http://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
+	var omdbUrl = `https://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
 } else if (selectedMov == 'Sci-Fi') {
 	matrix = sci_fiArr[randomMov].name;
-	var omdbUrl = `http://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
+	var omdbUrl = `https://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
 }
 
 // const omdbUrl = `http://www.omdbapi.com/?t=${matrix}&apikey=${key}`;
