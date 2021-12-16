@@ -131,7 +131,7 @@ fetch(requestUrl)
 		const char = dataList.data.results;
 		console.log(dataList.data.results[0].description);
 		var details = dataList.data.results[0].description;
-		var detailsNew = details.replaceAll('"', '');
+		var detailsNew = details.replaceAll('""', '');
 
 		char.forEach((item, i) => {
 			var each = document.createElement('li');

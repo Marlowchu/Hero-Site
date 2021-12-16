@@ -19,6 +19,7 @@ h1 {
 	width: 100vw;
 	height: 80px;
 	background-color: goldenrod;
+	box-shadow: 1px 1px 15px 8px rgba(255, 0, 0, 0.514);
 	/* position: fixed; */
 }
 
@@ -50,6 +51,7 @@ h1 {
 }
 
 .navigation-bar > a {
+	/* position: fixed; */
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 10px;
@@ -58,8 +60,7 @@ h1 {
 	color: black;
 	padding-top: 40px;
 	margin: 0;
-	margin-bottom: 50px !important;
-	box-shadow: 1px 1px 15px 8px rgba(255, 0, 0, 0.514);
+	margin-bottom: 10px !important;
 }
 
 img {
@@ -127,6 +128,15 @@ li {
 	border: 6px solid rgba(244, 247, 54, 0.575);
 	float: left;
 	position: relative;
+	margin-left: -40px;
+	margin-top: -100px;
+	margin-right: 65px;
+}
+
+ol {
+	width: auto;
+	margin-top: -43.4px;
+	position: relative;
 }
 
 .card:hover,
@@ -172,7 +182,7 @@ li {
 #player {
 	position: relative;
 	margin-left: 13px;
-	margin-right: 10px;
+	margin-right: 111px;
 }
 
 p {
@@ -189,7 +199,76 @@ span {
 	opacity: 0.8;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 500px) and (min-width: 352px) {
+	.card {
+		height: 444px;
+		width: 292px;
+		background-color: rgba(255, 0, 0, 0.548);
+		padding: 5px;
+		border-radius: 12px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border: 6px solid rgba(244, 247, 54, 0.575);
+		float: left;
+		margin-left: -10px;
+		margin-top: 40px;
+		position: relative;
+	}
+
+	.cardMov {
+		height: 444px;
+		width: 292px;
+		background-color: rgba(255, 0, 0, 0.548);
+		padding: 5px;
+		border-radius: 12px;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border: 6px solid rgba(244, 247, 54, 0.575);
+		float: left;
+		margin-top: -15px;
+		margin-left: -40px;
+		margin-bottom: 15px;
+		position: relative;
+	}
+
+	ol {
+		width: 300px;
+		margin-top: -500px;
+		position: relative;
+		/* float: left; */
+		margin-left: 1px;
+	}
+
+	#player {
+		position: relative;
+		margin-left: -2px;
+		margin-right: 100px;
+		margin-top: 15px;
+	}
+
+	li {
+		font-size: 1.7rem;
+		font-family: myfirstfont;
+		color: green;
+		margin: 5px;
+		width: 360px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		display: inline-flex;
+	}
+}
+
+@media screen and (max-width: 1471px) and (min-width: 767px) {
+	#player {
+		position: relative;
+		margin-left: 50px;
+		margin-right: 10px;
+		margin-top: -100px;
+	}
+
 	.card {
 		height: 444px;
 		width: 300px;
@@ -201,7 +280,7 @@ span {
 		justify-content: center;
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
-		margin-left: 5px;
+		margin-left: 433px;
 		margin-top: 40px;
 		position: relative;
 	}
@@ -217,13 +296,20 @@ span {
 		justify-content: center;
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
-		margin-left: -25px;
-		margin-bottom: 15px;
+		margin-left: -15px;
+		margin-right: 25px;
+		margin-bottom: 33px;
+		position: relative;
+	}
+	ol {
+		width: 1000px;
+		height: 300px;
+		margin-top: -33.4px;
 		position: relative;
 	}
 }
 
-@media screen and (max-width: 1026px) {
+@media screen and (max-width: 766px) and (min-width: 501px) {
 	.card {
 		height: 444px;
 		width: 300px;
@@ -235,8 +321,8 @@ span {
 		justify-content: center;
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
-		margin-left: 313px;
-		margin-top: 40px;
+		margin-left: 165px;
+		margin-top: 60px;
 		position: relative;
 	}
 
@@ -251,7 +337,8 @@ span {
 		justify-content: center;
 		border: 6px solid rgba(244, 247, 54, 0.575);
 		float: left;
-		margin-left: -25px;
+		margin-top: 8px;
+		margin-left: 65px;
 		margin-right: 25px;
 		margin-bottom: 33px;
 		position: relative;
@@ -272,8 +359,8 @@ span {
 
 	#player {
 		position: relative;
-		margin-left: 13px;
+		margin-left: 172px;
 		margin-right: 10px;
-		margin-top: -1px;
+		margin-top: 22px;
 	}
 }
