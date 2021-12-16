@@ -119,7 +119,7 @@ function getApiVid() {
 			// vidPlayerEl.setAttribute(att);
 
 			vidPlayerEl.innerHTML =
-				`<p>Your Music Pick</p><iframe id= "vidPlayer" width="294" height="300"
+				`<p>Your Music Pick</p><iframe id= "vidPlayer" width="300" height="300"
         src="https://www.youtube.com/embed/` +
 				vidId +
 				`?autoplay=1&mute=1">
