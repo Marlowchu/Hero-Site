@@ -10,4 +10,4 @@ The site presents several aspects of reading, researching, and fun while giving 
 
 Deployed Website Link: https://marlowchu.github.io/Hero-Site/index.html
 
-Screenshot of Site: <img src="./Develop/images/HeroScope_Gif.gif">
+Screenshot of Site: ![HeroScope(SS)](https://user-images.githubusercontent.com/89208706/147612521-650c967c-b4fe-4df5-a11b-18ef34510bad.png)
